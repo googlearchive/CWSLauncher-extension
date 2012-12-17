@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chrome Web Store Launcher (by Google)</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+
+<div id="outer">
+    <div id="storeBanner">
+        <img src="cwslogo.png" width="30" height="30"/>
+        <span>Chrome Web Store Launcher (by Google)</span>
+    </div>
+    <h3>Favorites:</h3>
+    <div class="favorites">
+        <div id="fav1"></div>
+        <div id="fav2"></div>
+        <div id="fav3"></div>
+        <div id="fav4"></div>
+        <div id="fav5"></div>
+    </div>
+    <div style="text-align: right"><button id="gotoOptions">Select Favorites</button></div>
+
+    <h3>All Apps:</h3>
+    <div id="search_container">
+      <input id="search" type="search" placeholder="Search installed apps" spellcheck="false">
+    </div>
+
+    <!-- This is where all of the installed apps are listed -->
+    <div id="apps"></div>
+    <div id="storelink">
+        <span style="float:left"><input type="search" size="30" id="searchterms" placeholder="Search the Store"/> <button id="searchstore">Search</button></span>
+        <span style="vertical-align:baseline">Get more apps from the <a id="visitstore" href="http://chrome.google.com/webstore">Chrome Web Store</a></span>
+    </div>
+</div>
+</body>
+</html>

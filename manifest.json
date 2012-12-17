@@ -1,0 +1,17 @@
+{
+  "name": "Chrome Web Store Launcher (by Google)",
+  "version": "1.2.0",
+  "description" : "The Chrome Web Store Launcher provides quick, easy access to all your Chrome apps.",
+  "permissions": ["management"],
+  "browser_action": {
+    "default_icon": "browser_action_icon.png",
+    "default_title": "Chrome Web Store Launcher",
+    "default_popup": "popup.html"
+  },
+  "options_page" : "options_page.html",
+  "icons": {
+    "48": "cwsbadge.png"
+  },
+  "content_security_policy" : "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "manifest_version": 2
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chrome Web Store Launcher Options</title>
+        <meta name="description" content="" />
+        <meta name="author" content="Cesare Marini" />
+        <script src="options_page.js"></script>
+        <style type="text/css">
+            fieldset {
+                padding: 20px;
+                border:1px solid #BDBDBD;
+                border-radius: 10px;
+            }
+            fieldset > div {
+                margin-bottom: 10px;
+            }
+            body {
+                font-family: "Lucida Grande", sans-serif;
+                color: #303942;
+                background-color: #ececec;
+                margin:20px;
+                text-align:center;
+            }
+            #CWSCompanionOptions {
+                width: 600px;
+                border-radius: 15px;
+                background-color:white;
+                text-align:left;
+                padding:20px;
+                box-shadow:2px 2px 6px 1px #999;
+            }
+            #optionsview {
+                text-align:center;
+                display:inline-block;
+            }
+            .bodytext {
+                color:#333;
+                font-size:.8em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="optionsview">
+        <div id="CWSCompanionOptions">
+            <header style="vertical-align: middle; margin-bottom: 15px">
+                <img style="vertical-align: middle; margin-right: 15px" src="cwsbadge.png"/>
+                <h2 style="display: inline; vertical-align: middle">Chrome Web Store Launcher Options</h2>
+            </header>
+
+            <div id="appList">
+                <form action="" id="favsForm">
+                    <fieldset>
+                        <legend>
+                            Select favorite applications:
+                        </legend>
+                        <div><p class="bodytext">You can select up to five (5) favorite applications. To leave a favorite slot empty, choose the "No favorite selected" option.</p></div>
+                        <div> 
+                            <label for="fav1">Favorite App 1: </label><select id="fav1" name="fav1" size="1">
+                            <option value="---">-- No favorite selected --</option>
+                            </select>
+                        </div>
+                        <div> 
+                            <label for="fav2">Favorite App 2: </label><select id="fav2" name="fav2" size="1">
+                            <option value="---">-- No favorite selected --</option>
+                            </select>
+                        </div>
+                        <div> 
+                            <label for="fav3">Favorite App 3: </label><select id="fav3" name="fav3" size="1">
+                            <option value="---">-- No favorite selected --</option>
+                            </select>
+                        </div>
+                        <div> 
+                            <label for="fav4">Favorite App 4: </label><select id="fav4" name="fav4" size="1">
+                            <option value="---">-- No favorite selected --</option>
+                            </select>
+                        </div>
+                        <div> 
+                            <label for="fav5">Favorite App 5: </label><select id="fav5" name="fav5" size="1">
+                            <option value="---">-- No favorite selected --</option>
+                            </select>
+                        </div>
+                        <div> 
+                            <button id="btnFinished">Finished</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
