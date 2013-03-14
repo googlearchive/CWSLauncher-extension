@@ -101,7 +101,7 @@ function loadFavorites() {
             curFavDiv.className = "fav";
             curFavDiv.setAttribute("data-appid",app.id);
             curFavDiv.onclick = function() {
-                _gaq.push("CWSLauncher","favLaunch");
+                _gaq.push("_trackEvent", "CWSLauncher", "favLaunch");
                 var strID = this.getAttribute("data-appid");
                 launchApp(strID);
             };
@@ -116,7 +116,7 @@ function addApp(appsDiv, app, selected) {
     div.title = app.name;
 
     div.onclick = function() {
-        _gaq.push("CWSLauncher","appLaunch");
+        _gaq.push("_trackEvent", "CWSLauncher", "appLaunch");
         launchApp(app.id);
     };
 
