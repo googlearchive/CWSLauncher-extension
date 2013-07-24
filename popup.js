@@ -245,6 +245,7 @@ function searchStore() {
         'url' : searchURL,
         'selected' : true
     });
+    _gaq.push(["_trackEvent", "CWSLauncher", "searchStore"]);
 }
 
 // Initalize the popup window.
@@ -289,7 +290,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     // Searches the Web store, opens in a new tab.
     document.querySelector('#searchstore').addEventListener('click', function() {
-        _gaq.push(["_trackEvent", "CWSLauncher", "searchStore"]);
         searchStore();
         window.close();
     });
