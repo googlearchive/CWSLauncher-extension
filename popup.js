@@ -276,6 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'url' : 'https://chrome.google.com/webstore',
             'selected' : true
         });
+        _gaq.push(["_trackEvent", "CWSLauncher", "launchStore"]);
         window.close();
     });
     // Opens the Options view.
@@ -288,6 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     // Searches the Web store, opens in a new tab.
     document.querySelector('#searchstore').addEventListener('click', function() {
+        _gaq.push(["_trackEvent", "CWSLauncher", "searchStore"]);
         searchStore();
         window.close();
     });

@@ -1,6 +1,6 @@
 {
   "name": "Chrome Web Store Launcher (by Google)",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description" : "The Chrome Web Store Launcher provides quick, easy access to all your Chrome apps.",
   "permissions": ["management"],
   "browser_action": {
